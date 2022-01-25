@@ -16,10 +16,8 @@
 
 const listaMail = ['mario@mail', 'guido@mail', 'sara@mail', 'michele@mail', 'sergio@mail' ]
 
-var mail = prompt('Inserisci la mail')
-if mail (@mail) {
-
-}
+const invitato = prompt('Inserisci la mail')
+for (let i=0; i<listaMail.length; i++)
 
 //controlla che sia nella lista di chi può accedere,
 //stampa un messaggio appropriato sull’esito del controllo. 
