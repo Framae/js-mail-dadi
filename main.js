@@ -14,23 +14,31 @@
 
 //Chiedi all’utente la sua email,
 
-const listaMail = ['mario@mail', 'guido@mail', 'sara@mail', 'michele@mail', 'sergio@mail'];
+let listaMail = ['mario@mail', 'guido@mail', 'sara@mail', 'michele@mail', 'sergio@mail'];
 
-const invitato = parseInt(prompt('Inserisci la mail'));
+//controlla che sia nella lista di chi può accedere,
+
+let invitato = prompt('Inserisci la mail');
+let conto = 0
+
+invitato.toUpperCase();
+
 for (let i=0; i<listaMail.length; i++) {
     
-    if (listaMail[i] == invitato) {
-        alert('Benvenuto!')
+    if (listaMail[i] == invitato) { //stampa un messaggio appropriato sull’esito del controllo. 
+        console.log('Benvenuti!');
+        conto += 1
     }
     
-    else {
-        alert('Ci dispiace, il tuo contatto non figura in questa lista')
+    else if (i == listaMail.length - 1 && conto == 0) {
+        console.log('Ci dispiace, il tuo contatto non figura in questa lista');
     }
     
 }
 
-//controlla che sia nella lista di chi può accedere,
-//stampa un messaggio appropriato sull’esito del controllo. 
+
+
+
 
 
 
