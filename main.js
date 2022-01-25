@@ -26,12 +26,13 @@ invitato.toUpperCase();
 for (let i=0; i<listaMail.length; i++) {
     
     if (listaMail[i] == invitato) { //stampa un messaggio appropriato sull’esito del controllo. 
-        console.log('Benvenuti!');
+        document.getElementById('answer');
+        document.write('Welcome')
         conto += 1
     }
     
     else if (i == listaMail.length - 1 && conto == 0) {
-        console.log('Ci dispiace, il tuo contatto non figura in questa lista');
+        document.writeln('Ci dispiace, il tuo contatto non figura in questa lista');
     }
     
 }
