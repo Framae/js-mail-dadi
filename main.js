@@ -31,7 +31,7 @@ for (let i=0; i<listaMail.length; i++) {
     }
     
     else if (i == listaMail.length - 1 && conto == 0) {
-        document.getElementById('answer').innerHTML = "Sorry, you are not on the list";
+        document.getElementById('answer').innerHTML = ":-( Sorry, you are not on the list";
     }
     
 }
