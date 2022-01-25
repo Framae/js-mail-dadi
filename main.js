@@ -16,13 +16,17 @@
 
 const listaMail = ['mario@mail', 'guido@mail', 'sara@mail', 'michele@mail', 'sergio@mail'];
 
-const invitato = prompt('Inserisci la mail');
+const invitato = parseInt(prompt('Inserisci la mail'));
 for (let i=0; i<listaMail.length; i++) {
     
-    if (listaMail[i]==invitato)
-    alert('Benvenuto!')
-    else 
-    alert('Ci dispiace, il tuo contatto non figura in questa lista')
+    if (listaMail[i] == invitato) {
+        alert('Benvenuto!')
+    }
+    
+    else {
+        alert('Ci dispiace, il tuo contatto non figura in questa lista')
+    }
+    
 }
 
 //controlla che sia nella lista di chi può accedere,
