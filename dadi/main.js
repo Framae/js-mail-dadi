@@ -19,6 +19,10 @@ if (myNumber > computerNumber) {
 else if (myNumber < computerNumber) {
     alert('Ha vinto il computer')
 }
+else {
+    alert('pareggio')
+}
+
 
 // console.log(numero.toFixed(2));
 
