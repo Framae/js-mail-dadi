@@ -7,10 +7,10 @@
 
 //  computer generates myNumber
 let myNumber = Math.floor(Math.random() * 6) + 1;
-alert(myNumber);
+alert('My number is: '+ myNumber);
 // // computer generates computer 
 let computerNumber = Math.floor(Math.random() * 6) + 1;
-alert(computerNumber);
+alert("Computer's number is: " + computerNumber);
 
 if (myNumber > computerNumber) {
     alert('Hai vinto!')
